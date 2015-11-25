@@ -5,8 +5,8 @@ MAINTAINER Wanny Morellato
 #
 # Kafka installation
 #
-ENV KAFKA_VERSION 0.8.2.1
-ENV SCALA_VERSION 2.10
+ENV KAFKA_VERSION 0.9.0.0
+ENV SCALA_VERSION 2.11
 
 RUN curl -sSL "http://apache.mirrors.pair.com/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz" | tar -zxvf - -C /opt && \
     ln -fs /opt/kafka_* /opt/kafka && \
